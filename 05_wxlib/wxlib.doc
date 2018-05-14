@@ -1,0 +1,69 @@
+
+ @cdk_mli{wX_types}{}{}
+
+ @cdk_mli{wX_adjust}{}{}
+
+ @cdk_mli{wX_display}{}{}
+
+ @cdk_mli{wX_screen}{}{}
+
+ @cdk_mli{wX_base}{}{}
+
+ @cdk_mli{wX_object}{}{}
+
+ @cdk_mli{wX_root}{}{}
+
+ @cdk_mli{wX_top}{}{}
+
+ @cdk_mli{wX_dummy}{}{}
+
+ @cdk_mli{wX_bar}{}{}
+
+ @cdk_mli{wX_table}{}{}
+
+ @cdk_mli{wX_scrollbar}{}{}
+
+ @cdk_mli{wX_label}{}{}
+
+ @cdk_mli{wX_pixmap}{}{}
+
+ @cdk_mli{wX_viewport}{}{}
+
+ @cdk_mli{wX_text}{}{}
+
+ @cdk_mli{wX_button}{}{}
+
+ @cdk_mli{wX_popup}{}{}
+
+ @cdk_mli{wX_selector}{}{}
+
+ @cdk_mli{wX_deleg}{}{}
+
+ @cdk_mli{wX_port}{}{}
+
+ @cdk_mli{wX_wmtop}{}{}
+
+  @cdk_mli{wX_appli}{}{}
+
+ @cdk_mli{wX_dialog}{}{}
+
+ @cdk_mli{wX_panel}{}{}
+
+ @cdk_mli{wX_scale}{}{}
+
+ @cdk_mli{wX_ledit}{}{}
+
+ @cdk_mli{wX_radiobutton}{}{}
+
+ @cdk_mli{wX_Graphics}{}{}
+
+ @cdk_mli{wX_xterm}{}{}
+
+ @cdk_mli{wX_tree}{}{}
+
+ @cdk_mli{wX_swap}{}{}
+
+ @cdk_mli{wX_notebook}{}{}
+
+
+

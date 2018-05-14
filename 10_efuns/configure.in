@@ -1,0 +1,22 @@
+AC_REVISION($Revision: 1.1 $)
+AC_PREREQ(2.0)
+AC_INIT(configure.in)
+touch install-sh
+
+efuns_release=3.01
+efuns_version=1.00
+
+ocamllib=`cdk_config -ocamllib`
+
+BINDIR=`cdk_config -bindir`
+LIBDIR=`cdk_config -libdir`
+
+AC_SUBST(efuns_release)
+AC_SUBST(efuns_version)
+AC_SUBST(ocamllib)
+AC_SUBST(BINDIR)
+AC_SUBST(LIBDIR)
+
+touch .depend
+
+AC_OUTPUT(efuns_version.ml Makefile.config)

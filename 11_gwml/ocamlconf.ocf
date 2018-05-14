@@ -1,0 +1,31 @@
+pp="camlp4o.opt"
+requires = "!wxlib !unix2 str"
+
+begin imlib
+  TYPE = library
+  FILES = "imlib_stubs.c imager.ml "
+
+(* Change this, depending on "imlib-config --libs" *)
+  CCLIB = "-L/usr/lib -lImlib -ljpeg -ltiff -lungif -lpng -lz -lm -lXext -L/usr/X11R6/lib -lSM -lICE -lXext -lX11"
+end
+
+begin esd
+  TYPE = library
+  FILES = "esd_stubs.c sound.ml "
+
+(* Change this, depending on "esd-config --libs" *)
+  CCLIB = "-L/usr/lib -lesd -laudiofile -lm -lasound"
+end
+
+begin gwml
+   type = program
+   requires = "!imlib !esd"
+   files = "
+gwml_version.ml gwml_args.ml locale.ml wobenv.ml sound.ml 
+gwml.ml gradients.ml  wob.ml plug.ml top.ml client.ml screen.ml null.ml label.ml ledit.ml pixmap.ml bar.ml text.ml
+cpp.mll sendEvent.ml image.ml opttable.ml stdconfig.ml animate.ml  stdvirtual.ml user.ml appMgr.ml  stdmenus.ml stdicon.ml  stdplacement.ml themes.ml
+ stddeco.ml modules.ml fvwm.mll wmaker.mll afterstep.mll twm_t.ml twm_l.mll twm_p.mly twm.ml group.ml gnome.ml  undo.ml dvroom.ml stdgwmlrc.ml gwmlrc.ml
+main.ml
+"
+  pp="camlp4o.opt"
+end

@@ -1,0 +1,30 @@
+#!/bin/sh
+
+SRCDIR=`pwd`
+
+OCAMLC=`which ocamlc`
+OCAMLVER=`ocamlc -version`
+OCAMLLIB=`ocamlc -where`
+OCAMLBIN=`dirname $OCAMLC`
+
+echo ocamlc... $OCAMLC
+echo version... $OCAMLVER
+echo lib... $OCAMLLIB
+echo path... $OCAMLBIN
+
+echo > Makefile.config
+echo OCAMLBIN=$OCAMLBIN >> Makefile.config
+echo OCAMLVER=$OCAMLVER >> Makefile.config
+echo OCAMLLIB=$OCAMLLIB >> Makefile.config
+echo SRCDIR=$SRCDIR >> Makefile.config
+
+echo > ocamlconf_config.ml
+echo let ocamlbin='"'$OCAMLBIN'"' >> ocamlconf_config.ml
+echo let ocamlver='"'$OCAMLVER'"' >> ocamlconf_config.ml
+echo let ocamllib='"'$OCAMLLIB'"' >> ocamlconf_config.ml
+echo let srcdir='"'$SRCDIR'"' >> ocamlconf_config.ml
+
+case $OCAMLVER in
+  3.08*) cat ocamlconf_config.ml 3.08/pa_ocamlconf.ml > pa_ocamlconf.ml;;
+  *) cat ocamlconf_config.ml 3.09/pa_ocamlconf.ml > pa_ocamlconf.ml;;
+esac

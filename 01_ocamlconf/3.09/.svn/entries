@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="93"
+   name=""
+   committed-date="2006-09-29T18:17:39.858517Z"
+   url="svn+ssh://p2p/home/palabre/svn/ocamlconf/3.09"
+   last-author="lefessan"
+   kind="dir"
+   uuid="eb019480-881b-0410-b8af-80a7cdfa3b02"
+   revision="95"/>
+<entry
+   committed-rev="93"
+   name="pa_ocamlconf.ml"
+   text-time="2006-10-02T09:14:34.000000Z"
+   committed-date="2006-09-29T18:17:39.858517Z"
+   checksum="4458c6e7b7381832f3f573d96daeaa7c"
+   last-author="lefessan"
+   kind="file"
+   prop-time="2006-10-02T09:14:34.000000Z"/>
+</wc-entries>

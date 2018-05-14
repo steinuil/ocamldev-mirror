@@ -1,0 +1,7 @@
+
+begin xlib
+  files = "xdebug.ml xA.ml xfifo.ml xequeue.ml jeton.ml xtypes.ml wintbl.ml xbuffer.ml xauth.ml ll_trans.ml conv_event.ml shbuf.ml display.ml xproto.ml x.ml xsync.ml xasync.ml xC.ml xK.ml keyBind.ml xlib.ml xtext.ml icccm.ml zpixmap.ml  shape.ml xmu.ml eloop.ml selection.ml xterm.ml xpm.mll xGraphics.ml xrm.mll"
+  requires = "unix unix2"
+end
+
+

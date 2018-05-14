@@ -1,0 +1,12 @@
+
+GWML_RELEASE=@gwml_release@
+GWML_VERSION=@gwml_version@
+IMLIB_COBJS=@imlib_cobjs@
+IMLIB_CFLAGS=@imlib_cflags@
+IMLIB_CLINK=@imlib_clink@
+ESD_COBJS=@esd_cobjs@
+ESD_CFLAGS=@esd_cflags@
+ESD_CLINK=@esd_clink@
+OCAMLLIB=@ocamllib@
+BINDIR=@BINDIR@
+LIBDIR=@LIBDIR@

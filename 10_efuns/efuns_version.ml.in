@@ -1,0 +1,4 @@
+
+let efuns_version = "@efuns_version@"
+let efuns_release = "@efuns_release@"
+let efuns_lib = "@LIBDIR@/efuns-@efuns_version@-@efuns_release@"

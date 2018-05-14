@@ -1,0 +1,49 @@
+This library provides general useful modules
+
+@menu
+@cdk_menu{0}
+
+* Libraries extlib end:: .
+
+@cdk_menu{1}
+@end menu
+
+@cdk_section{stdlib2}{Extensions to the @code{Stdlib} modules}{}
+
+@cdk_mli{pervasives2}{}{various basic functions}
+@cdk_mli{filename2}{}{}
+@cdk_mli{format2}{}{}
+@cdk_mli{hashtbl2}{}{}
+@cdk_mli{list2}{}{}
+@cdk_mli{printexc2}{}{}
+@cdk_mli{sort2}{}{}
+@cdk_mli{string2}{}{}
+@cdk_mli{sys2}{}{}
+
+@end cdk_section
+
+@cdk_section{Other modules}{}{}
+
+@cdk_mli{activebuffer}{}{}
+@cdk_mli{bitv}{}{}
+@cdk_mli{file}{}{}
+@cdk_mli{sysenv}{}{}
+@cdk_mli{dynvars}{}{}
+@cdk_mli{filepath}{}{}
+@cdk_mli{options}{}{}
+@cdk_mli{ptmap}{}{}
+@cdk_mli{ptset}{}{}
+@cdk_mli{sb_ralist}{}{}
+@cdk_mli{size}{}{}
+@cdk_mli{trie}{}{}
+@cdk_mli{todo}{}{}
+@cdk_mli{pp}{}{}  
+@cdk_mli{pc}{}{}  
+@cdk_mli{lc}{}{}  
+@cdk_mli{pc2}{}{}  
+@cdk_mli{std}{}{}
+
+@end cdk_section
+
+@node Libraries extlib end, , Libraries extlib Other modules, Libraries extlib
+

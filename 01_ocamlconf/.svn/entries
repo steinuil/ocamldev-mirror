@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="93"
+   name=""
+   committed-date="2006-09-29T18:17:39.858517Z"
+   url="svn+ssh://p2p/home/palabre/svn/ocamlconf"
+   last-author="lefessan"
+   kind="dir"
+   uuid="eb019480-881b-0410-b8af-80a7cdfa3b02"
+   revision="95"/>
+<entry
+   committed-rev="91"
+   name="ocamlconf_sort.ml"
+   text-time="2006-09-28T21:43:32.000000Z"
+   committed-date="2006-09-28T21:17:04.836745Z"
+   checksum="f7c3818d881c44944952f090c33b273a"
+   last-author="lefessan"
+   kind="file"
+   prop-time="2006-09-28T21:43:32.000000Z"/>
+<entry
+   committed-rev="91"
+   name="ocamlmake.ml"
+   text-time="2006-09-11T09:19:33.000000Z"
+   committed-date="2006-09-28T21:17:04.836745Z"
+   checksum="9b5e629ea3a1fd3bf195300e37245d36"
+   last-author="lefessan"
+   kind="file"
+   prop-time="2006-09-28T21:43:32.000000Z"/>
+<entry
+   committed-rev="6"
+   name="configure"
+   text-time="2006-08-22T08:54:36.000000Z"
+   committed-date="2006-08-21T15:50:32.686243Z"
+   checksum="536c1ed8ec3da67ec46a83c7c6e59133"
+   last-author="lefessan"
+   kind="file"
+   prop-time="2006-08-22T08:54:35.000000Z"/>
+<entry
+   committed-rev="6"
+   name="Copying.txt"
+   text-time="2006-08-22T08:54:36.000000Z"
+   committed-date="2006-08-21T15:50:32.686243Z"
+   checksum="9b7175f67d2d879d63b4ad8839fb7cdb"
+   last-author="lefessan"
+   kind="file"
+   prop-time="2006-08-22T08:54:35.000000Z"/>
+<entry
+   name="3.08"
+   kind="dir"/>
+<entry
+   committed-rev="19"
+   name="ocamlconf.ml"
+   text-time="2006-08-22T09:40:50.000000Z"
+   committed-date="2006-08-22T09:47:09.117476Z"
+   checksum="b1c888f9db6f19fd0e59fa31a1f71207"
+   last-author="lefessan"
+   kind="file"
+   prop-time="2006-08-22T08:54:36.000000Z"/>
+<entry
+   name="3.09"
+   kind="dir"/>
+<entry
+   committed-rev="6"
+   name="Readme.txt"
+   text-time="2006-08-22T08:54:36.000000Z"
+   committed-date="2006-08-21T15:50:32.686243Z"
+   checksum="31ea08ba4dc28dcccaa2c0f0756817e2"
+   last-author="lefessan"
+   kind="file"
+   prop-time="2006-08-22T08:54:36.000000Z"/>
+<entry
+   committed-rev="6"
+   name=".cvsignore"
+   text-time="2006-08-22T08:54:36.000000Z"
+   committed-date="2006-08-21T15:50:32.686243Z"
+   checksum="e411a893bd9327a95e0c4c73ea34cfd9"
+   last-author="lefessan"
+   kind="file"
+   prop-time="2006-08-22T08:54:36.000000Z"/>
+<entry
+   committed-rev="6"
+   name="Makefile"
+   text-time="2006-08-22T08:54:36.000000Z"
+   committed-date="2006-08-21T15:50:32.686243Z"
+   checksum="117a8f40ffc99eeb43051035863542c0"
+   last-author="lefessan"
+   kind="file"
+   prop-time="2006-08-22T08:54:36.000000Z"/>
+</wc-entries>

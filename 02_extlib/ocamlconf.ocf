@@ -1,0 +1,15 @@
+packages = extlib_pack
+begin extlib
+  pp = "camlp4o.opt"
+  files = " cdk.ml pervasives2.ml list2.ml string2.ml  sysenv.ml 
+  printexc2.ml format2.ml filename2.ml  
+  log.ml filepath.ml options.ml 
+  activebuffer.ml cpp.mll dynvars.ml ptmap.ml ptset.ml hashcons.ml size.ml 
+  bitv.ml sb_ralist.ml sb_ralist2.ml sort2.ml sys2.ml 
+  getopt.ml splay.ml splaytbl.ml hashtbl2.ml 
+  obuffer.ml     ohashtbl.ml    oqueue.ml      ostack.ml 
+  omap.ml        oset.ml        ostream.ml     ogenlex.ml 
+  omapping.ml todo.ml file.ml crcs.ml 
+  pp.ml  pc.ml  lc.ml  pc2.ml  std.ml buffer2.ml 
+    vlist.ml"
+end

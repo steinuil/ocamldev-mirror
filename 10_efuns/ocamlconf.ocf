@@ -1,0 +1,12 @@
+begin efuns
+   type = program
+   requires = "!wxlib !unix2 str"
+   files = "interface.mli
+     efuns_version.ml local.ml efuns.ml text.ml keymap.ml ebuffer.ml window.ml frame.ml top_window.ml simple.ml minibuffer.ml  multi_frames.ml select.ml search.ml system.ml abbrevs.ml complex.ml compil.ml eval.ml interactive.ml server.ml
+ accents_mode.ml paren_mode.ml abbrevs_mode.ml fill_mode.ml tab_mode.ml
+ compat_comp.ml ocaml_mode.mll ocaml_toplevel.ml 
+ makefile_mode.ml tex_mode.mll c_mode.mll lisp_mode.mll html_mode.mll dired.ml
+ std_efunsrc.ml
+ main.ml
+"
+end

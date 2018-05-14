@@ -1,0 +1,30 @@
+TYPE = program 
+REQUIRES = xlib
+begin xprop
+  FILES = "xprop.ml"
+end
+begin xbanner
+  FILES = "xbanner.ml"
+end
+begin movePointer
+  FILES = "movePointer.ml"
+end
+begin chess
+  FILES = "chess.ml"
+end
+begin pacman
+  FILES = "pacman.ml"
+end
+begin sendKey
+  FILES = "sendKey.ml"
+  REQUIRES = str
+end
+begin sqmove
+  FILES = "sqmove.ml"
+end
+begin xpm2ml
+  FILES = "xpm2ml.ml"
+end
+begin xpmroot
+  FILES = "xpmroot.ml"
+end

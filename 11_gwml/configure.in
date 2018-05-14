@@ -1,0 +1,94 @@
+AC_REVISION($Revision: 1.2 $)
+AC_PREREQ(2.0)
+AC_INIT(configure.in)
+touch install-sh
+
+gwml_release=3.01
+gwml_version=1.00
+
+ocamllib=`cdk_config -ocamllib`
+
+imlib_set=no
+esd_set=no
+use_imlib=yes
+use_esd=yes
+
+while : ; do
+  case "$1" in
+    "") break;;
+    -use_esd)
+        use_esd=yes;;
+    -no_esd)
+        use_esd=no;;
+    -use_imlib)
+        use_imlib=yes;;
+    -no_imlib)
+        use_imlib=no;;
+    *) echo "Unknown option \"$1\"." 1>&2; exit 2;;
+  esac
+  shift
+done
+
+rm -f imager.ml
+if test "X$use_imlib" = "Xyes" ; then
+  AC_PATH_PROG(tmp_use_imlib, imlib-config, imlib-config)
+  use_imlib=$tmp_use_imlib
+else
+  use_imlib=no
+fi
+if test  "$use_imlib" = "yes" ; then
+  imlib_tmp_clink=`imlib-config --libs`
+  imlib_tmp_cflags=`imlib-config --cflags`
+  imlib_clink="-cclib \"$imlib_tmp_clink\""
+  imlib_cflags=\"$imlib_tmp_cflags\"
+  imlib_cobjs=imlib_stubs.o
+  ln -s imlib/imager.ml imager.ml
+else
+  ln -s no_imlib/imager.ml imager.ml
+fi
+
+rm -f sound.ml
+if test  "$use_esd" = "yes" ; then
+  AC_PATH_PROG(tmp_use_esd, esd-config, esd-config)
+  use_esd=$tmp_use_esd
+else
+  use_esd=no
+fi
+
+if test  "$use_esd" = "yes" ; then
+  esd_cflags_tmp=`esd-config --cflags`
+  if test  "$esd_cflags_tmp" = "" ; then
+     esd_cflags=""
+  else
+     esd_cflags=\"$esd_cflags_tmp\"
+  fi
+  esd_clink_tmp=`esd-config --libs`
+  if test  "$esd_clink_tmp" = "" ; then
+     esd_clink=""
+  else
+     esd_clink="-cclib \"$esd_clink_tmp\""
+  fi
+  esd_cobjs=esd_stubs.o
+  ln -s esd/sound.ml sound.ml
+else
+  ln -s no_esd/sound.ml sound.ml
+fi
+
+BINDIR=`cdk_config -bindir`
+LIBDIR=`cdk_config -libdir`
+
+AC_SUBST(gwml_release)
+AC_SUBST(gwml_version)
+AC_SUBST(imlib_cobjs)
+AC_SUBST(imlib_cflags)
+AC_SUBST(imlib_clink)
+AC_SUBST(esd_cobjs)
+AC_SUBST(esd_cflags)
+AC_SUBST(esd_clink)
+AC_SUBST(ocamllib)
+AC_SUBST(BINDIR)
+AC_SUBST(LIBDIR)
+
+touch .depend
+
+AC_OUTPUT(gwml_version.ml Makefile.config)

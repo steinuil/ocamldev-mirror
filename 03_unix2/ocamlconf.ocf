@@ -1,0 +1,6 @@
+packages = unix2_pack
+begin unix2
+  requires = extlib
+  files = "concur.ml cdk_passwd_lexers.mll cdk_passwd_parsers.mly passwd.ml unix2.ml pty.ml getdomainname.c select.c glob.ml glob_c.c wordexp.ml wordexp_c.c
+ fnmatch.ml fnmatch_c.c utils.ml str2.ml time.ml"
+end

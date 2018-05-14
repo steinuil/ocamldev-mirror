@@ -1,0 +1,4 @@
+
+let gwml_version = "@gwml_version@"
+let gwml_release = "@gwml_release@"
+let gwml_lib = "@LIBDIR@/gwml-@gwml_version@-@gwml_release@"
