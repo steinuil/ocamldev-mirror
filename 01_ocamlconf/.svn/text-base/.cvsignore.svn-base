@@ -1,6 +1,0 @@
-ocamlconf
-pa_ocamlconf.ml
-ocamlconf_config.ml
-Makefile.config
-ocamlmake
-ocamlconf.conf
