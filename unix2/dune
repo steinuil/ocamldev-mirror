@@ -2,7 +2,8 @@
  (name unix2)
  (modules concur)
  (wrapped false)
- (libraries extlib))
+ (libraries extlib)
+ (c_names select))
 
 (env
  (dev

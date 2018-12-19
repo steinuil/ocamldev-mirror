@@ -47,31 +47,32 @@ module ThreadUnix :
     val wait : unit -> int * Unix.process_status
     val waitpid : Unix.wait_flag list -> int -> int * Unix.process_status
     val system : string -> Unix.process_status
-    val read : Unix.file_descr -> string -> int -> int -> int
-    val write : Unix.file_descr -> string -> int -> int -> int
-    val pipe : unit -> Unix.file_descr * Unix.file_descr
+    val read : Unix.file_descr -> bytes -> int -> int -> int
+    val write : Unix.file_descr -> bytes -> int -> int -> int
+    val pipe : ?cloexec:bool -> unit -> Unix.file_descr * Unix.file_descr
     val open_process_out : string -> out_channel
     val open_process : string -> in_channel * out_channel
     val sleep : int -> unit
     val socket :
-      Unix.socket_domain -> Unix.socket_type -> int -> Unix.file_descr
+      ?cloexec:bool ->
+        Unix.socket_domain -> Unix.socket_type -> int -> Unix.file_descr
 (*
     val socketpair :
       Unix.socket_domain ->
       Unix.socket_type -> int -> Unix.file_descr * Unix.file_descr
 *)
-    val accept : Unix.file_descr -> Unix.file_descr * Unix.sockaddr
+    val accept : ?cloexec:bool -> Unix.file_descr -> Unix.file_descr * Unix.sockaddr
     val connect : Unix.file_descr -> Unix.sockaddr -> unit
     val recv :
-      Unix.file_descr -> string -> int -> int -> Unix.msg_flag list -> int
+      Unix.file_descr -> bytes -> int -> int -> Unix.msg_flag list -> int
     val recvfrom :
       Unix.file_descr ->
-    string -> int -> int -> Unix.msg_flag list -> int * Unix.sockaddr
+    bytes -> int -> int -> Unix.msg_flag list -> int * Unix.sockaddr
     val send :
-      Unix.file_descr -> string -> int -> int -> Unix.msg_flag list -> int
+      Unix.file_descr -> bytes -> int -> int -> Unix.msg_flag list -> int
     val sendto :
       Unix.file_descr ->
-    string -> int -> int -> Unix.msg_flag list -> Unix.sockaddr -> int
+    bytes -> int -> int -> Unix.msg_flag list -> Unix.sockaddr -> int
     val open_connection : Unix.sockaddr -> in_channel * out_channel
     val select : Unix.file_descr list -> Unix.file_descr list -> Unix.file_descr list -> float ->  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list 
 (*
