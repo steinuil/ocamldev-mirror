@@ -1,0 +1,9 @@
+(library
+ (name unix2)
+ (modules concur)
+ (wrapped false)
+ (libraries extlib))
+
+(env
+ (dev
+  (flags (:standard -warn-error -A -w -3-33-27))))

@@ -1,0 +1,23 @@
+(library
+ (name xlib)
+ (modules xlib
+          xtypes
+          xfifo
+          xequeue
+          jeton
+          display
+          x
+          xasync
+          xbuffer
+          xproto
+          conv_event
+          ll_trans
+          shbuf
+          xdebug
+          xauth)
+ (wrapped false)
+ (libraries unix2))
+
+(env
+ (dev
+  (flags (:standard -warn-error -A -w -3-33-27))))
