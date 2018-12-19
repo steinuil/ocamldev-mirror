@@ -1,23 +1,36 @@
 (library
  (name xlib)
- (modules xlib
-          xtypes
-          xfifo
-          xequeue
-          jeton
+ (modules conv_event
           display
-          x
-          xasync
-          xbuffer
-          xproto
-          conv_event
+          eloop
+          icccm
+          jeton
+          keyBind
           ll_trans
           shbuf
+          wintbl
+          x
+          xA
+          xGraphics
+          xK
+          xasync
+          xauth
+          xbuffer
           xdebug
-          xauth)
+          xequeue
+          xfifo
+          xlib
+          xpm
+          xproto
+          xsync
+          xtext
+          xtypes
+          zpixmap)
  (wrapped false)
  (libraries unix2))
 
+(ocamllex xpm)
+
 (env
  (dev
-  (flags (:standard -warn-error -A -w -3-33-27))))
+  (flags (:standard -warn-error -A -w -3-33-27-32-30-35-37-26-21-9 -unsafe-string))))

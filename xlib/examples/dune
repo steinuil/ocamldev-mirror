@@ -1,0 +1,9 @@
+(executable
+ (name chess)
+ (modules chess)
+ (libraries xlib))
+
+(executable
+ (name pacman)
+ (modules pacman)
+ (libraries xlib))

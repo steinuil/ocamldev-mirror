@@ -132,7 +132,7 @@ let chargement_terrain () =
             plateau.(i).(j)<-Blanc;
           end;
     done;
-     input_char f;
+    ignore @@ input_char f;
   done;
   close_in f;;
 
@@ -252,7 +252,7 @@ let perdu() =
   set_font "lucidasans-bolditalic-14";
   draw_string "APPUYEZ SUR UNE TOUCHE...";
   update();
-  read_key();;
+  ignore @@ read_key();;
 
 
        
@@ -665,6 +665,7 @@ let _ =
       
       affiche !x_pac !y_pac !bouche x_m y_m etat_monstre !d_pac;
       update();
+      Unix.sleepf 0.01
     done;
     perdu();
   done;

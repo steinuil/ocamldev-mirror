@@ -2,7 +2,3 @@
  (name extlib)
  (modules log)
  (wrapped false))
-
-(env
- (dev
-  (flags (:standard -warn-error -A -w -3-33-27))))

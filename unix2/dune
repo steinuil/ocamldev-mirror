@@ -2,9 +2,9 @@
  (name unix2)
  (modules concur)
  (wrapped false)
- (libraries extlib)
+ (libraries extlib unix)
  (c_names select))
 
 (env
  (dev
-  (flags (:standard -warn-error -A -w -3-33-27))))
+  (flags (:standard -w -27))))
