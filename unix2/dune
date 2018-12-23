@@ -1,10 +1,15 @@
 (library
  (name unix2)
- (modules concur)
+ (modules concur utils
+          cdk_passwd_lexers
+          cdk_passwd_parsers)
  (wrapped false)
  (libraries extlib unix)
  (c_names select))
 
+(ocamllex cdk_passwd_lexers)
+(ocamlyacc cdk_passwd_parsers)
+
 (env
  (dev
-  (flags (:standard -w -27))))
+  (flags (:standard -w -3-26-27-32 -unsafe-string))))

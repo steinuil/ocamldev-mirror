@@ -1,9 +1,24 @@
-(executable
- (name chess)
- (modules chess)
+(executables
+ (names chess
+        movePointer
+        pacman
+        sqmove
+        xbanner
+        xpm2ml
+        xpmroot
+        xprop)
+ (modules chess
+          movePointer
+          pacman
+          sqmove
+          xbanner
+          xpm2ml
+          xpmroot
+          xprop)
  (libraries xlib))
 
+
 (executable
- (name pacman)
- (modules pacman)
- (libraries xlib))
+ (name sendKey)
+ (modules sendKey)
+ (libraries str xlib))

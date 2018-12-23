@@ -1,35 +1,9 @@
 (library
  (name xlib)
- (modules conv_event
-          display
-          eloop
-          icccm
-          jeton
-          keyBind
-          ll_trans
-          shbuf
-          wintbl
-          x
-          xA
-          xGraphics
-          xK
-          xasync
-          xauth
-          xbuffer
-          xdebug
-          xequeue
-          xfifo
-          xlib
-          xpm
-          xproto
-          xsync
-          xtext
-          xtypes
-          zpixmap)
  (wrapped false)
  (libraries unix2))
 
-(ocamllex xpm)
+(ocamllex xpm xrm)
 
 (env
  (dev

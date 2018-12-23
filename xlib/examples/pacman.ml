@@ -37,7 +37,7 @@ and delay = ref 0.001
 and temps_chasse_max = 1000 (* temps maxi de chasse *)
 and point_pastille = 50
 and point_dot = 10
-and max_vie = 30 
+and max_vie = 3
 and taille_pac = 9
 and x_pac_init = 14
 and y_pac_init = 7
@@ -282,10 +282,10 @@ let affiche x y b x_m y_m etat_monstre d_pac=
 let chgtdir d_pac =
   let d' = read_key() in
   match d' with
-    '4' | 'j'  -> Gauche
-  | '6' | 'k' -> Droite
-  | '8' | 'a' -> Haut
-  | '5' | '2' | 'z' -> Bas
+    '4' | 'h'  -> Gauche
+  | '6' | 'l' -> Droite
+  | '8' | 'k' -> Haut
+  | '5' | '2' | 'j' -> Bas
   | '+' -> delay := !delay +. 0.0001;d_pac
   | '-' -> delay := !delay -. 0.0001;d_pac
   | _ -> d_pac;;
