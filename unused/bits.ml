@@ -1,0 +1,8 @@
+external bits_get : 'a bits -> 'a -> bool = "%bits_get"
+external bits_set : 'a bits -> 'a -> bool -> 'a bits = "%bits_set"
+external bits_not : 'a bits -> 'a bits = "%bits_not"
+external bits_or : 'a bits -> 'a bits -> 'a bits = "%bits_or"
+external bits_and : 'a bits -> 'a bits -> 'a bits = "%bits_and"
+external bits_xor : 'a bits -> 'a bits -> 'a bits = "%bits_xor"
+external int_of_bits : 'a bits -> int = "%int_of_bits"
+external bits_of_int : int -> 'a bits = "%bits_of_int"
