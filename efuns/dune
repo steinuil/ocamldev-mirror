@@ -1,0 +1,49 @@
+(executable
+ (name main)
+ (libraries wxlib)
+ (modules
+  local
+  efuns_version
+  efuns
+  text
+  keymap
+  ebuffer
+  window
+  frame
+  top_window
+  simple
+  minibuffer
+  multi_frames
+  select
+  search
+  system
+  abbrevs
+  complex
+  compil
+  eval
+  interactive
+  server
+  accents_mode
+  paren_mode
+  abbrevs_mode
+  fill_mode
+  tab_mode
+  compat_comp
+  ocaml_mode
+  ocaml_toplevel
+  makefile_mode
+  tex_mode
+  c_mode
+  lisp_mode
+  html_mode
+  dired
+  std_efunsrc
+  main))
+
+(ocamllex ocaml_mode
+          tex_mode
+          c_mode
+          lisp_mode
+          html_mode)
+
+(env (dev (flags (:standard -warn-error -A -unsafe-string))))

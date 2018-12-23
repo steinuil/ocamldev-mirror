@@ -9,7 +9,7 @@
 (*                                                                     *)
 (***********************************************************************)
 
-open Interface
+(* open Interface *)
   
 open Top_window
 open Efuns

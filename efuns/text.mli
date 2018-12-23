@@ -8,7 +8,7 @@
 (*  Automatique.  Distributed only by permission.                      *)
 (*                                                                     *)
 (***********************************************************************)
-open Interface
+(* open Interface *)
   
 exception ReadOnlyBuffer
 

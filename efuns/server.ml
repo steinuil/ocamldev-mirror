@@ -9,7 +9,7 @@
 (*                                                                     *)
 (***********************************************************************)
 
-open Interface
+(* open Interface *)
   
 open Efuns
 open Xtypes

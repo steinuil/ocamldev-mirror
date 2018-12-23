@@ -10,7 +10,7 @@
 (***********************************************************************)
 
 
-open Interface
+(* open Interface *)
 open Options
 open Utils
 open Interactive
@@ -429,7 +429,7 @@ let _ =
       menu#popup_once x (y + button#height) (Some !WX_types.button_event)
       )
   
-let _ =
+let run () =
   Efuns.add_start_hook (fun location ->
       add_option_parameter location compile_find_makefile;
       add_option_parameter location Text.add_amount;

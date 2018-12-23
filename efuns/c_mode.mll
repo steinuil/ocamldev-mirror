@@ -10,7 +10,7 @@
   (*                                                                     *)
   (***********************************************************************)
 
-  open Interface
+(* open Interface *)
     
   open Options  
   open Lexing

@@ -9,7 +9,7 @@
 (*                                                                     *)
 (***********************************************************************)
 
-open Interface
+(* open Interface *)
 
 (* A FAIRE:
 On doit faire converger ce text vers un text directement affichable par

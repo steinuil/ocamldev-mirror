@@ -9,7 +9,7 @@
 (*                                                                     *)
 (***********************************************************************)
 val screen_resize : WX_types.screen_struct -> unit
-val iter_refresh : < refresh : 'a; .. > list -> unit
+val iter_refresh : < refresh : unit; .. > list -> unit
 val screen_update : WX_types.screen_struct -> unit
 class virtual t :
   WX_types.screen_struct ->

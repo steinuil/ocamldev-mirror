@@ -9,7 +9,7 @@
 (*                                                                     *)
 (***********************************************************************)
 
-open Interface
+(* open Interface *)
   
 open Text
 open Keymap

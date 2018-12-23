@@ -22,7 +22,7 @@ and node =
     mutable leaf_dx': int }
 val leaf : int -> WX_types.contained -> node
 val branch : bool -> WX_types.contained -> WX_types.contained -> node
-val iter : (WX_types.contained -> 'a) -> node list -> unit
+val iter : (WX_types.contained -> unit) -> node list -> unit
 val iter_visible : (WX_types.contained -> unit) -> node list -> unit
 val iter_size : node list -> int -> int -> int * int
 

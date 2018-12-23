@@ -9,7 +9,7 @@
 (*                                                                     *)
 (***********************************************************************)
 
-open Interface
+(* open Interface *)
 
 (*
 La gestion des keymaps est inadapte'e a` la modification dynamique.

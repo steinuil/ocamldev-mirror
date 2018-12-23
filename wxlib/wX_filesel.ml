@@ -148,8 +148,8 @@ class t root info attributes =
                 ledit_sel#set_string (Filename.concat dirname name));
             button#contained
         ) (Sort.list (<) files)) in
-    Printexc2.catch "dir_bar" (fun _ -> dir_bar#set_items dirs);
-    Printexc2.catch "file_bar" (fun _ -> file_bar#set_items files);
+    Printexc2.catch "dir_bar" (fun _ -> dir_bar#set_items dirs) ();
+    Printexc2.catch "file_bar" (fun _ -> file_bar#set_items files) ();
     ady_dir#set_pos 0 1;
     ady_file#set_pos 0 1;
   in

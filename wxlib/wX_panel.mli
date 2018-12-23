@@ -35,7 +35,7 @@ end
 
 class separator :
   t ->
-  < get_pos : int -> int; set_pos : int -> int -> 'a; .. > ->
+  < get_pos : int -> int; set_pos : int -> int -> unit; .. > ->
   WX_types.base_attributes list ->
   object
     inherit WX_object.t

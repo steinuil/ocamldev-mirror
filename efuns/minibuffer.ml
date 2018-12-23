@@ -10,7 +10,7 @@
 (***********************************************************************)
 
 open Options
-open Interface
+(* open Interface *)
   
 open Text
 open Efuns

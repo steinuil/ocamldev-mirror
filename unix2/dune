@@ -2,10 +2,13 @@
  (name unix2)
  (modules concur utils
           cdk_passwd_lexers
-          cdk_passwd_parsers)
+          cdk_passwd_parsers
+          str2
+          passwd
+          unix2)
  (wrapped false)
- (libraries extlib unix)
- (c_names select))
+ (libraries str extlib unix)
+ (c_names select getdomainname))
 
 (ocamllex cdk_passwd_lexers)
 (ocamlyacc cdk_passwd_parsers)

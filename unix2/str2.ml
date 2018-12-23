@@ -23,4 +23,4 @@ let regexp_from_list list =
       [] -> ""
     | hd :: tail ->
         List.fold_left (fun str ele ->
-          str ^ "\|\(" ^ ele ^ "\)") ("\(" ^ hd ^ "\)") tail)
+          str ^ "\\|\\(" ^ ele ^ "\\)") ("\\(" ^ hd ^ "\\)") tail)

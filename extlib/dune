@@ -1,4 +1,22 @@
 (library
  (name extlib)
- (modules log)
- (wrapped false))
+ (wrapped false)
+ (libraries camlp4.lib unix)
+ (modules cdk
+          log
+          list2
+          filepath
+          filename2
+          options
+          printexc2
+          string2
+          sys2
+          sysenv))
+
+(rule
+ (targets options.ml)
+ (deps options.camlp4.ml)
+ (action
+  (run camlp4of -impl %{deps} -o %{targets})))
+
+(env (dev (flags (:standard -warn-error -A -unsafe-string))))

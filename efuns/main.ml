@@ -9,7 +9,7 @@
 (*                                                                     *)
 (***********************************************************************)
 
-open Interface
+(* open Interface *)
 
 open Options
 open Obj
@@ -85,6 +85,7 @@ let display = WX_xterm.create_display root_oo
 let top_window = Top_window.create location display
   
 let _ =
+  Std_efunsrc.run ();
   WX_xterm.setHighlight display 2;
 (*  Dyneval.init Format.std_formatter true; 
   Eval.load top_window "Efunsrc"; *)
