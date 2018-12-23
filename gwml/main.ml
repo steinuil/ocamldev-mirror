@@ -87,7 +87,7 @@ let _ =
               *)
 
 let main () =      
- 
+  Gwmlrc.run ();
   (* Update signals *)
   Unix.set_close_on_exec display.socket;
   Utils.set_signal Sys.sigint  (Sys.Signal_handle Wob.exit_gwml);

@@ -96,6 +96,8 @@ let _ =
   From this list of machines, I create a menu, with sub-menus for each
   project.
   ************)
+
+let run () = print_endline "a"
   
 let _ =
   hosts := [ 

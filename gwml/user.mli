@@ -11,7 +11,7 @@
 
 val noOwnerEvents : bool
 val peek_window :
-  (Xtypes.display -> Xtypes.window -> 'a) -> Gwml.screen_desc -> unit -> unit
+  (Xtypes.display -> Xtypes.window -> unit) -> Gwml.screen_desc -> unit -> unit
 type move_resize = Place | Move | Resize
 val time : int ref
 val motion_event : int ref

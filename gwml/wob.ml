@@ -411,11 +411,13 @@ class wob_base =
     
     method update_fg = ()
     
+    (*
     method set_backimage filename = 
       if backimage <> filename || render_backimage then begin
           backimage <- filename;
           if backimage <> NoImage then (try self#update_bg with _ -> ())
         end
+    *)
     
     method resized = 
       match backimage with

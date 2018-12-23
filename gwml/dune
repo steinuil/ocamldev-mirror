@@ -1,0 +1,10 @@
+(executable
+ (name main)
+ (libraries wxlib unix2 str)
+ (preprocess
+  (action (run %{bin:camlp4o} %{input-file}))))
+
+(ocamllex twm_l fvwm afterstep wmaker)
+(ocamlyacc twm_p)
+
+(env (dev (flags (:standard -warn-error -A -unsafe-string))))
