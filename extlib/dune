@@ -1,54 +1,7 @@
 (library
  (name extlib)
  (wrapped false)
- (libraries camlp4.lib)
- )
-; (modules activebuffer
-;          bitv
-;          buffer2
-;          cdk
-;          cpp
-;          dynvars
-;          file
-;          filename2
-;          filepath
-;          format2
-;          getopt
-;          hashcons
-;          hashtbl2
-;          lc
-;          list2
-;          log
-;          obuffer
-;          ogenlex
-;          ohashtbl
-;          omap
-;          omapping
-;          options
-;          oqueue
-;          oset
-;          ostack
-;          ostream
-;          pc
-;          pc2
-;          pervasives2
-;          pp
-;          printexc2
-;          ptmap
-;          ptset
-;          sb_ralist
-;          sb_ralist2
-;          size
-;          sort2
-;          splay
-;          splaytbl
-;          std
-;          string2
-;          sys2
-;          sysenv
-;          todo
-;          vlist
-;          ))
+ (libraries camlp4.lib unix))
 
 (rule
  (targets options.ml)
@@ -71,10 +24,3 @@
 (ocamllex cpp)
 
 (env (dev (flags (:standard -warn-error -A -unsafe-string))))
-
-;; Not working:
-;; array_c.c
-;; farray
-;; iarray
-;; parray
-;; trie
