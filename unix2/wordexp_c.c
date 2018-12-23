@@ -11,7 +11,7 @@
 #define ML_WRDE_UNDEF       Val_int(2)
 
 
-value obj_block_c(int size) /* ML */
+static value obj_block_c(int size) /* ML */
 {
   value res;
   mlsize_t i;
@@ -50,7 +50,7 @@ value wordexp_c(value pattern_v, value flags_v)
   Begin_root(result);  
   result = obj_block_c(pwordexp.we_wordc);
   for(res=0; res < pwordexp.we_wordc; res++){
-    Modify(&Field(result,res), copy_string(pwordexp.we_wordv[res]));
+    modify(&Field(result,res), copy_string(pwordexp.we_wordv[res]));
   }
   End_roots();
 

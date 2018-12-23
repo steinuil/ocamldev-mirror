@@ -21,7 +21,7 @@
 /* #define ML_GLOB_ALTDIRFUNC  */
 /* #define ML_GLOB_APPEND */
 
-value obj_block_c(int size) /* ML */
+static value obj_block_c(int size) /* ML */
 {
   value res;
   mlsize_t i;
@@ -79,7 +79,7 @@ value glob_c(value pattern_v,
   Begin_root(result);  
   result = obj_block_c(pglob.gl_pathc);
   for(res=0; res < pglob.gl_pathc; res++){
-    Modify(&Field(result,res), copy_string(pglob.gl_pathv[res]));
+    modify(&Field(result,res), copy_string(pglob.gl_pathv[res]));
   }
   End_roots();
 

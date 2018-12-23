@@ -1,0 +1,3 @@
+(executables
+ (names fnmatch_test glob_test wordexp_test)
+ (libraries unix2))

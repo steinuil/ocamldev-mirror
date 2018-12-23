@@ -1,17 +1,54 @@
 (library
  (name extlib)
  (wrapped false)
- (libraries camlp4.lib unix)
- (modules cdk
-          log
-          list2
-          filepath
-          filename2
-          options
-          printexc2
-          string2
-          sys2
-          sysenv))
+ (libraries camlp4.lib)
+ )
+; (modules activebuffer
+;          bitv
+;          buffer2
+;          cdk
+;          cpp
+;          dynvars
+;          file
+;          filename2
+;          filepath
+;          format2
+;          getopt
+;          hashcons
+;          hashtbl2
+;          lc
+;          list2
+;          log
+;          obuffer
+;          ogenlex
+;          ohashtbl
+;          omap
+;          omapping
+;          options
+;          oqueue
+;          oset
+;          ostack
+;          ostream
+;          pc
+;          pc2
+;          pervasives2
+;          pp
+;          printexc2
+;          ptmap
+;          ptset
+;          sb_ralist
+;          sb_ralist2
+;          size
+;          sort2
+;          splay
+;          splaytbl
+;          std
+;          string2
+;          sys2
+;          sysenv
+;          todo
+;          vlist
+;          ))
 
 (rule
  (targets options.ml)
@@ -19,4 +56,25 @@
  (action
   (run camlp4of -impl %{deps} -o %{targets})))
 
+(rule
+ (targets ogenlex.ml)
+ (deps ogenlex.camlp4.ml)
+ (action
+  (run camlp4of -impl %{deps} -o %{targets})))
+
+(rule
+ (targets splay.ml)
+ (deps splay.camlp4.ml)
+ (action
+  (run camlp4of -impl %{deps} -o %{targets})))
+
+(ocamllex cpp)
+
 (env (dev (flags (:standard -warn-error -A -unsafe-string))))
+
+;; Not working:
+;; array_c.c
+;; farray
+;; iarray
+;; parray
+;; trie

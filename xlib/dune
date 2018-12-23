@@ -5,6 +5,4 @@
 
 (ocamllex xpm xrm)
 
-(env
- (dev
-  (flags (:standard -warn-error -A -w -3-33-27-32-30-35-37-26-21-9 -unsafe-string))))
+(env (dev (flags (:standard -warn-error -A -unsafe-string))))
